@@ -1,0 +1,14 @@
+{
+  "activeSessionId": "sess_1790230860966",
+  "sessions": [
+    {
+      "id": "sess_1790230860966",
+      "title": "Новый диалог",
+      "createdAt": "24.09.2026 11:21",
+      "updatedAt": "24.09.2026 11:21",
+      "selectedModel": "google/gemma-4-26b-a4b-it",
+      "temperature": 0.7,
+      "messages": []
+    }
+  ]
+}

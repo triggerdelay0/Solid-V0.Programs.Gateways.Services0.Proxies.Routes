@@ -1,0 +1,162 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 6px 20px;
+}
+
+.userRow {
+  align-items: flex-end;
+}
+
+.assistantRow {
+  align-items: flex-start;
+}
+
+.systemRow {
+  align-items: center;
+}
+
+.bubble {
+  max-width: 780px;
+  border-radius: var(--radius-bubble);
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid var(--border-color);
+  word-break: break-word;
+}
+
+.userBubble {
+  background-color: var(--bg-bubble-user);
+  border-color: var(--border-accent);
+}
+
+.assistantBubble {
+  background-color: var(--bg-bubble-assistant);
+}
+
+.systemBubble {
+  background-color: var(--bg-bubble-system);
+  border-color: rgba(255, 255, 255, 0.05);
+  font-size: 12px;
+  color: var(--text-system);
+  text-align: center;
+  max-width: 600px;
+}
+
+.errorBubble {
+  border-color: rgba(239, 68, 68, 0.4);
+  background-color: rgba(239, 68, 68, 0.08);
+  color: #fca5a5;
+}
+
+.metaHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 11px;
+}
+
+.senderRole {
+  font-weight: 600;
+  color: var(--text-author);
+}
+
+.modelBadge {
+  font-size: 9.5px;
+  font-weight: 700;
+  color: var(--text-accent);
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.timestamp {
+  color: var(--text-muted);
+}
+
+/* Вложения */
+.attachmentsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.imagePreview {
+  max-width: 260px;
+  max-height: 180px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.imagePreview:hover {
+  transform: scale(1.02);
+}
+
+.fileBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.fileBadge:hover {
+  background-color: var(--bg-sidebar-hover);
+}
+
+.content {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  user-select: text;
+}
+
+.footerBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.toolBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 3px 6px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.toolBtn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+.playingBtn {
+  color: var(--status-online);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}

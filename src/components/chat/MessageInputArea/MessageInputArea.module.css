@@ -1,0 +1,94 @@
+.container {
+  background-color: var(--bg-header);
+  border-top: 1px solid var(--border-color);
+  padding: 10px 18px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: flex-end;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  transition: border-color var(--transition-fast);
+}
+
+.inputWrapper:focus-within {
+  border-color: var(--border-focus);
+}
+
+.textarea {
+  flex: 1;
+  background: transparent;
+  font-size: 13.5px;
+  line-height: 1.45;
+  resize: none;
+  max-height: 200px;
+  padding: 2px 0;
+}
+
+.textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.attachBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.attachBtn:hover {
+  background-color: var(--bg-sidebar-hover);
+  color: var(--text-primary);
+}
+
+.sendBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--accent-button);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.activeSendBtn {
+  background-color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: #fff;
+}
+
+.activeSendBtn:hover {
+  background-color: var(--accent-primary-hover);
+}
+
+.hiddenFileInput {
+  display: none;
+}
+
+.hintText {
+  font-size: 10.5px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  text-align: center;
+}
